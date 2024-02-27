@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSQUE</title>
+    <link rel="icon" href="mosque.png" type="image/png">
+    <style>
+        body {
+            background-color: paleturquoise;
+            color: forestgreen;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the body takes the full viewport height */
+        }
+
+        article {
+            position: relative;
+            padding: 20px;
+            max-width: 80%;
+            text-align: center;
+            animation: flyAndPulse 3s cubic-bezier(0.42, 0, 0.58, 1) forwards, fadeInRotateShadow 1.5s cubic-bezier(0.42, 0, 0.58, 1) 3s forwards; /* Apply the animations */
+            opacity: 0; /* Set initial opacity to 0 */
+            left: 50%; /* Start from the middle horizontally */
+            top: 50%; /* Start from the middle vertically */
+            transform: translateX(-50%) translateY(-50%); /* Center horizontally and vertically */
+            box-shadow: 0 10px 30px pink; /* Change shadow to be stronger */
+        }
+
+        @keyframes flyAndPulse {
+            0% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-50%) translateY(-200px); /* Start from the middle and higher */
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-50%) translateY(-50%) translateY(-100px); /* Stop even higher in the middle */
+            }
+        }
+
+        @keyframes fadeInRotateShadow {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* Apply fade-in effect to the text content */
+        article b {
+            animation: fadeInText 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, changeColor 3s infinite; /* Apply color-changing animation */
+            opacity: 0;
+        }
+
+        /* Keyframes for fade-in effect */
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Keyframes for color-changing effect */
+       @keyframes changeColor {
+            0% {
+                color: cadetblue; /* Initial color */
+            }
+            6.666% {
+                color: coral; /* Second color */
+            }
+            13.333% {
+                color: gold; /* Third color */
+            }
+            20% {
+                color: darkorange; /* Fourth color */
+            }
+            26.666% {
+                color: orangered; /* Fifth color */
+            }
+            53.333% {
+                color: mediumseagreen; /* Ninth color */
+            }
+            60% {
+                color: dodgerblue; /* Tenth color */
+            }
+            66.666% {
+                color: mediumslateblue; /* Eleventh color */
+            }
+            73.333% {
+                color: violet; /* Twelfth color */
+            }
+            80% {
+                color: mediumpurple; /* Thirteenth color */
+            }
+            86.666% {
+                color: darkturquoise; /* Fourteenth color */
+            }
+            93.333% {
+                color: mediumaquamarine; /* Fifteenth color */
+            }
+            100% {
+                color: cadetblue; /* Back to initial color */
+            }
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 768px) {
+            article {
+                max-width: 90%; /* Adjust max-width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <b><i>বর্তমানে দান  করতে হলে আপনাকে নিচের মেইলে মেইল করে বিস্তারিত বলতে হবে তারপর আপনাকে বিকাশ নাম্বার  দেওয়া হবে <br> mail: <a href="mailto:niloyislammail@gmail.com">niloyislammail@gmail.com</a> <br> mail: <a href="mailto:niloyislambd@outlook.com">niloyislambd@outlook.com</a> <br> mail: <a href="mailto:admin@niloy.pw">admin@niloy.pw</a></i></b>
+    </article>
+</body>
+</html>
